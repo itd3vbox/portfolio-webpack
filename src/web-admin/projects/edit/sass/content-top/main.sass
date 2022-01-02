@@ -1,0 +1,73 @@
+.p-content-top
+    width: 100%
+    box-sizing: border-box
+    padding: 25px 10px 10px 10px
+    border-radius: 1rem
+    position: relative
+    overflow: hidden
+    border-radius: 1rem
+
+    .decoration
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 70px
+        background-image: url("/images/samples/pattern-2.jpg")
+
+    & > *
+        position: relative
+         
+        @media screen and ( max-width: 768px )
+            position: relative
+            top: auto
+            right: auto
+            width: 100%
+            margin-bottom: 25px
+
+    .content-main
+        display: flex
+ 
+
+        .block-1
+            border-radius: 0.4rem
+            box-sizing: border-box
+            padding: 10px
+            position: relative
+            text-align: center
+    
+            @import './image-main/main'
+            @import './status/main'
+                    
+
+        .block-2
+            flex: 1
+            box-sizing: border-box
+            padding: 50px 10px 10px 10px
+
+            h2
+                span
+                    display: block
+                .name
+                    font-size: 1.2rem
+                .name-sub
+                    font-size: 0.9rem
+                    
+            @import './indicators/main'
+
+        @media screen and ( max-width: 768px )
+            flex-direction: column
+            align-items: center
+            gap: 25px
+
+            .block-1,
+            .block-2
+                width: 100%
+
+            .block-1
+                order: -1
+            .block-2
+                padding: 10px
+                h2
+                    text-align: center
+            

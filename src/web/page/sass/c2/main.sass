@@ -1,0 +1,25 @@
+body.scroll-disabled #page-c2
+    overflow: hidden
+    
+#page-c2
+    flex: 1
+    height: 100%
+    overflow: auto
+    display: flex
+    flex-direction: column
+
+    &.scroll-disabled
+        overflow: hidden
+        &::before
+            content: ''
+            display: block
+            width: 100%
+            height: 100%
+            position: fixed
+            top: 0
+            left: 0
+            z-index: 100
+            user-select: none
+    
+
+    @import './ending/main'

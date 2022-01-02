@@ -1,0 +1,26 @@
+.files
+    width: 100%
+    min-height: 200px
+    background-color: var(--color-7)
+    position: relative
+    box-sizing: border-box
+    padding: 25px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    &::before
+        content: ''
+        display: block
+        width: calc( 100% - 20px )
+        height: calc( 100% - 20px )
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        border: 2px dashed var(--color-8)
+
+    @import './content-grid/main'
+    @import './content-empty/main'
+    @import './content-uploading/main'

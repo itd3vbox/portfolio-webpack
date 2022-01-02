@@ -1,0 +1,32 @@
+.p-zero
+    width: 100%
+    display: flex
+    gap: 50px
+
+    .block-1,
+    .block-2
+        flex: 1
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        box-sizing: border-box
+        padding: 50px 10px
+
+        & > .content
+            max-width: 400px
+            
+            h1
+                font-size: 2rem
+            
+            .text
+                font-size: 0.9rem
+                line-height: 1.2
+                margin-top: 50px
+
+    @import 'components/slideshow/sass/main'
+
+    @media ( max-width: 1000px )
+        flex-direction: column
+        
+    

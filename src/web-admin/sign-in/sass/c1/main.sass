@@ -1,0 +1,39 @@
+#page-c1
+    width: 500px
+    height: 100%
+    overflow: auto
+    z-index: 110
+    position: relative
+    box-sizing: border-box
+
+
+    .item-close
+        width: 100%
+        display: none
+        justify-content: flex-end
+        box-sizing: border-box
+        padding: 25px
+
+        @import 'components/button-icon/sass/main'
+            
+
+
+    @media screen and ( max-width: 1000px )
+        position: fixed
+        top: 0
+        left: -600px
+        display: none
+        transition-property: left
+        transition-duration: 0.5s
+
+        &.selected
+            display: block
+
+        &.ready
+            left: 0
+
+        .item-close
+            display: flex
+
+    @media screen and ( max-width: 600px )
+        width: 100%

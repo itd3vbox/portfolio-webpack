@@ -1,0 +1,13 @@
+& > .block-1
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    gap: 50px
+
+    @import './block-1/main'
+    @import './block-2/main'
+
+    @media ( max-width: 600px )
+        align-items: center
+        flex-direction: column
+        

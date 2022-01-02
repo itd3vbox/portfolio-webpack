@@ -1,0 +1,55 @@
+.content-grid
+    width: 100%
+    display: none
+    position: relative
+    
+    &.visible
+       display: block
+
+    .grid
+        display: grid
+        grid-template-columns: repeat(auto-fill, 100px)
+        justify-content: center
+        gap: 25px
+
+    .image
+        position: relative
+        width: 100px
+        height: 100px
+
+        img
+            display: block
+            max-width: 80px
+            max-height: 80px
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+        @import 'components/button-icon/sass/main'
+        .button-icon
+            width: 30px
+            height: 30px
+            font-size: 15px
+            position: absolute
+            top: 10px
+            right: 10px
+            background-color: var(--color-2)
+
+    .options
+        grid-template-columns: repeat(auto-fill, 100px)
+        justify-content: center
+        gap: 10px
+        margin-top: 25px
+
+        &.hidden
+            display: none
+        
+        @import 'components/button-icon/sass/main'
+        .button-icon
+            width: 40px
+            height: 40px
+            font-size: 20px
+            color: var(--color-8)
+            &:hover
+                color: var(--color-5)

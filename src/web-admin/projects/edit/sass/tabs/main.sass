@@ -1,0 +1,42 @@
+.page-tabs-nav
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    box-sizing: border-box
+    padding: 10px
+    border-radius: 0.4rem
+    user-select: none
+
+    & > .t-item
+        box-sizing: border-box
+        color: var(--color-8)
+        margin: 10px
+        cursor: pointer
+        position: relative
+        &:hover,
+        &.selected
+            &::before
+                content: ''
+                display: block
+                width: 100%
+                height: 2px 
+                background-color: var(--color-5)
+                position: absolute
+                bottom: -10px
+                left: 0
+
+        &.selected
+            color: var(--color-5)
+
+.page-tabs-contents
+    width: 100%
+    flex: 1
+    display: flex
+    flex-direction: column
+    & > .t-content
+        width: 100%
+        flex: 1
+        flex-direction: column
+        display: none
+        &.selected
+            display: flex

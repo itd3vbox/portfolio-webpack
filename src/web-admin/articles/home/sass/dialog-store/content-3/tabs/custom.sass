@@ -1,0 +1,15 @@
+.tabs-nav
+    background-color: var(--color-7)
+
+    & > .tn-item:not(.disabled)
+        color: var(--color-8)
+        &:hover,
+        &.selected
+            &::before
+                background-color: var(--color-5)
+
+        &.selected
+            color: var(--color-5)
+
+    & > .tn-item.disabled
+            color: var(--color-10)

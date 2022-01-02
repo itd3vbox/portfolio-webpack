@@ -1,0 +1,46 @@
+&.is-added form
+    display: none
+
+form
+    .text
+        width: 100%
+        font-size: 0.9rem
+        line-height: 1.2
+
+    @import 'components-form/input/sass/main'
+    @import 'components/button-toggle-simple/sass/main'
+    @import 'components/button-text/sass/main'
+    @import 'components-editor/editor/sass/main'
+
+    .editor
+        min-height: 400px
+        margin-top: 25px
+
+    .form-row
+        &:not(:first-child)
+            margin-top: 25px
+
+    input
+        border: none
+
+    .button-toggle-simple
+        margin-top: 10px
+
+    .value
+        margin-top: 10px
+        font-size: 0.8rem
+
+        div
+            display: inline-block
+            border-radius: 1rem
+            padding: 5px 10px
+            i
+                font-size: 15px
+                margin-right: 5px
+            i,
+            span
+                vertical-align: middle
+
+    .button-text
+        font-size: 0.8rem
+        font-weight: bolder

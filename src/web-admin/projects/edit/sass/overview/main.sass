@@ -1,0 +1,29 @@
+.p-overview
+    width: 100%
+    flex: 1
+
+    h2
+        font-size: 1.5rem
+        box-sizing: border-box
+        padding: 0 50px
+
+    .o-grid
+        idth: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        gap: 25px
+        margin-top: 50px
+
+        @import './block/main'
+        @import './status/main'
+        @import './name/main'
+        @import './links/main'
+
+
+    @media ( max-width: 800px )
+        h2
+            padding: 0
+
+   
+        

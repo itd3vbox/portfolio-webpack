@@ -1,0 +1,29 @@
+.editor
+    width: 100%
+    flex: 1
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+    .edx-tools
+        display: grid
+        grid-template-columns: repeat(auto-fill, 30px)
+        justify-content: center
+        gap: 10px
+        user-select: none
+
+        .tool
+            width: 30px
+            height: 30px
+            font-size: 15px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 30%
+            cursor: pointer
+
+    .edx-content
+        width: 100%
+        flex: 1
+        box-sizing: border-box
+        padding: 10px

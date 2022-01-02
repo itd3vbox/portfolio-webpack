@@ -1,0 +1,39 @@
+.ob-status
+    
+    & > .b-content 
+
+        @import 'components-layout/dialog-center/sass/custom'
+        
+        form
+        
+            .button-toggle-simple
+                .btn
+                    background-color: var(--color-2)
+                &.off .btn .ball
+                    background-color: var(--color-8)
+                &.on .btn .ball
+                    background-color: var(--color-12)
+                
+                .form-error
+                    color: var(--color-6)
+                .form-message
+                    color: var(--color-8)
+
+            .form-error
+                color: var(--color-6)
+            .form-message
+                color: var(--color-8)
+
+        .value
+            .indicator
+                background-color: var(--color-8)
+            .data
+                background-color: var(--color-8)
+                color: var(--color-2)
+
+        .value.is-available
+            .indicator
+                background-color: var(--color-12)
+            .data
+                background-color: var(--color-12)
+                color: var(--color-2)

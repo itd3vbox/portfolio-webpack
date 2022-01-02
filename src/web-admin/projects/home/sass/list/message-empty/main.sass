@@ -1,0 +1,22 @@
+&.is-empty .message-empty
+    display: flex
+    
+.message-empty
+    width: 100%
+    flex: 1
+    display: none
+    align-items: center
+
+    .block-1,
+    .block-2
+        flex: 1
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .text
+        font-size: 1.3rem
+
+
+    @media ( max-width: 800px )
+        flex-direction: column

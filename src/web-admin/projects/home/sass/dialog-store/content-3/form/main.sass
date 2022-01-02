@@ -1,0 +1,37 @@
+&.is-added form
+    display: none
+
+form
+
+    @import 'components-form/input/sass/main'
+    @import 'components-form/links/sass/main'
+    @import 'components-form/files/sass/main'
+    @import 'components/button-toggle-simple/sass/main'
+    @import 'components/button-text/sass/main'
+
+    h6,
+    label
+        font-size: 1rem
+
+    .text
+        width: 100%
+        font-size: 0.9rem
+        line-height: 1.2
+        margin: 10px 0
+
+    .form-row
+        &:not(:first-child)
+            margin-top: 25px
+
+    .form-error
+        font-weight: 0.8rem
+        font-weight: bolder
+
+    input
+        border: none
+
+    .button-text
+        font-size: 0.8rem
+        font-weight: bolder
+
+    @import './status/main'

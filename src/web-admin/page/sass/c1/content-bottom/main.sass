@@ -1,0 +1,51 @@
+.content-bottom
+
+    .links
+        box-sizing: border-box
+        padding: 25px
+        display: flex
+        justify-content: center
+        text-align: center
+        flex-wrap: wrap
+        gap: 10px
+
+        @import 'components/button-icon/sass/main'
+        a
+            width: 30px
+            height: 30px
+            font-size: 15px
+            border-radius: 50%
+            transition-property: background-color, color, font-size
+            transition-duration: 0.5s
+            &:hover
+                font-size: 17px
+
+    .app
+        box-sizing: border-box
+        padding: 25px
+        font-size: 0.8rem
+        text-align: center
+        font-weight: bolder
+
+        .theme
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            gap: 10px
+
+            .name
+                font-weight: bolder
+
+        & > .name
+            display: inline-block
+            margin-top: 10px
+            font-size: 1.1rem
+            font-weight: bolder
+
+        .website
+            font-size: 0.8rem
+            font-style: oblique
+
+@media ( min-width: 1001px )
+    &.md-xs .items-bottom
+        display: none

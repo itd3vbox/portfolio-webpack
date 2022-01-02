@@ -1,0 +1,27 @@
+.p-blog
+    h2
+        font-size: 1.5rem
+        box-sizing: border-box
+        padding: 0 50px
+    
+
+    .articles
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(auto-fill, 400px)
+        justify-content: center
+        gap: 50px
+        margin-top: 50px
+
+        @import './article/main'
+
+    @import './pagination/main'     
+    @import './dialog-show/main'              
+    
+    @media ( max-width: 2000px )
+        .articles
+            box-sizing: border-box
+            padding: 0 10px
+
+            
+    

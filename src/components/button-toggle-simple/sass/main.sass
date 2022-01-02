@@ -1,0 +1,37 @@
+.button-toggle-simple
+
+    input
+        display: none
+
+    .btn
+        width: 50px
+        height: 25px
+        border-radius: calc(25px  / 2)
+        display: inline-block
+        vertical-align: middle
+        position: relative
+        cursor: pointer
+        user-select: none
+
+        .ball
+            display: block
+            width: 20px
+            height: 20px
+            border-radius: 10px
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            transition: 0.5s
+
+    &.on .ball
+        left: calc(100% - 20px - 2.5px)
+    &.off .ball
+        left: 2.5px
+
+    @keyframes button-toggle-simple-width
+        0% 
+            width: 20px
+        50%
+            width: 30px
+        100%
+            width: 20px

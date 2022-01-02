@@ -1,0 +1,36 @@
+.content-app
+    width: 100%
+    display: flex
+    gap: 25px
+    align-items: center
+    transition-property: background-color, color
+    transition-duration: 0.5s
+    margin-top: 50px
+    
+    .icon
+        width: 50px
+        height: 50px
+        position: relative
+        overflow: hidden
+
+        img
+            display: block
+            width: 50%
+            height: 50%
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+        
+    .name
+        font-size: 0.9rem
+        box-sizing: border-box
+        padding: 0 10px
+        text-align: right
+        flex: 1
+        font-weight: bolder
+        
+@media ( min-width: 1001px )
+    &.md-xs .item-app
+        .name
+            display: none

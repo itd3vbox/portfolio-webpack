@@ -1,0 +1,27 @@
+.dialog-store
+    width: 500px
+    height: 100vh
+    overflow: hidden
+    position: fixed
+    top: 0
+    right: -600px
+    z-index: 100
+    display: none
+    flex-direction: column
+    transition-property: right
+    transition-duration: 0.5s
+
+    &.selected
+        display: flex
+
+    &.ready
+        right: 0
+
+    @import './content-1/main'
+    @import './content-2/main'
+    @import './content-3/main'
+
+
+    @media ( max-width: 500px )
+        width: 100%
+        right: -110%
